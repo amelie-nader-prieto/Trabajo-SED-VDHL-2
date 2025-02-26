@@ -31,6 +31,9 @@ begin
     -- Actualizar el estado
     state_reg : process(clk)
     begin
+        if rising_edge(clk) then
+            current_state <= next_state;
+        end if;
     end process;
     
     -- Decodificar el estado siguiente
