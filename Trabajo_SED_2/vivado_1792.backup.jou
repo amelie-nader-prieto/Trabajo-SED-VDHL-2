@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Feb 26 12:28:39 2025
-# Process ID: 5668
+# Start of session at: Wed Feb 26 12:26:17 2025
+# Process ID: 1792
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12132 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16128 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2\vivado.jou
 # Running On        :AMELIE
@@ -19,7 +19,7 @@
 # Host memory       :8377 MB
 # Swap memory       :11274 MB
 # Total Virtual     :19651 MB
-# Available Virtual :11544 MB
+# Available Virtual :11440 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.xpr
