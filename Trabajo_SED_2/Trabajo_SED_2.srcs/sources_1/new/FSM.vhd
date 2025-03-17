@@ -46,10 +46,26 @@ begin
     begin
         case current_state is
             when reposo =>
+                if monedas = ("1000" or "0100" or "0010" or "0001") then
+                    next_state <= moneda_introducida;
+                else next_state <= current_state;
+                end if;
             
             when moneda_introducida =>
+                next_state <= recibiendo_monedas;
             
             when recibiendo_monedas =>
+                if comprar_producto = '1' then
+                    if i_importe < 100 then next_state <= recibiendo_monedas;
+                    elsif i_importe = 100 then next_state <= entregando_producto;
+                    else next_state <= error;
+                    end if;
+                elsif reset = '1' then
+                    next_state <= error;
+                elsif monedas = ("1000" or "0100" or "0010" or "0001") then
+                    next_state <= moneda_introducida;
+                else next_state <= current_state;
+                end if;
             
             when entregando_producto =>
             
@@ -58,6 +74,7 @@ begin
             when error =>
             
             when others =>
+                next_state <= reposo;
             
         end case;
     end process;
