@@ -34,10 +34,24 @@ architecture Behavioral of FSM is
     -- Duración del periodo del reloj (100MHz)
     constant T_clk : time := 10ns;
     -- Número de ciclos que debe durar el LED encendido
-    constant duracion_led : integer := 250_000_000;
+    constant duracion_led_producto : integer := 250_000_000;
+    constant duracion_led_error : integer := 250_000_000;
+    
+    -- Señales para gestionar la temporización
+    -- Se temporizan el led que indica la entrega del producto y el led que indica error
+    signal contador_producto : unsigned(27 downto 0) := (others => '0');
+    signal tiempo_terminado_producto : std_logic := '0';
+    signal contador_error : unsigned(27 downto 0) := (others => '0');
+    signal tiempo_terminado_error : std_logic := '0';
 
 begin
-    -- Actualizar el estado
+
+    -- Gestión de los estados temporizados
+    temporizacion : process(clk)
+    begin
+    end process;
+    
+    -- Actualizar el estado  
     state_reg : process(clk)
     begin
         if rising_edge(clk) then
@@ -71,12 +85,30 @@ begin
                     next_state <= moneda_introducida;
                 else next_state <= current_state;
                 end if;
-            
+                                
             when entregando_producto =>
+            -- Estado temporizado
+                if tiempo_terminado_producto = '1' then
+                    next_state <= reposo;
+                else
+                    next_state <= current_state;
+                end if;
             
             when devolver_dinero =>
+                if i_importe = 0 then
+                    -- se ha devuelto todo el dinero
+                    next_state <= reposo;
+                else
+                    next_state <= current_state;
+                end if;
             
             when error =>
+            -- Estado temporizado
+                if tiempo_terminado_error = '1' then
+                    next_state <= devolver_dinero;
+                else
+                    next_state <= current_state;
+                end if;
             
             when others =>
                 next_state <= reposo;
