@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Mar 19 11:28:09 2025
-# Process ID: 13864
+# Start of session at: Wed Mar 19 12:11:39 2025
+# Process ID: 3388
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13088 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4340 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2\vivado.jou
 # Running On        :AMELIE
@@ -19,7 +19,7 @@
 # Host memory       :8377 MB
 # Swap memory       :9126 MB
 # Total Virtual     :17504 MB
-# Available Virtual :11676 MB
+# Available Virtual :10540 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.xpr
@@ -114,7 +114,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 1463.809 ; gain = 401.848
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1485.637 ; gain = 419.414
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 19 12:01:40 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 19 12:15:58 2025...

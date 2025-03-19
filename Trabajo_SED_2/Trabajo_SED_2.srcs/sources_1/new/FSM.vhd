@@ -33,6 +33,8 @@ architecture Behavioral of FSM is
     
     -- Duración del periodo del reloj (100MHz)
     constant T_clk : time := 10ns;
+    -- Número de ciclos que debe durar el LED encendido
+    constant duracion_led : integer := 250_000_000;
 
 begin
     -- Actualizar el estado
