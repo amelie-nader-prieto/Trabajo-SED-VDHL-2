@@ -49,6 +49,31 @@ begin
     -- Gestión de los estados temporizados
     temporizacion : process(clk)
     begin
+        if rising_edge(clk) then
+            if current_state = entregando_producto then
+                if contador_producto = duracion_led_producto - 1 then
+                -- Ha finalizado la cuenta
+                    tiempo_terminado_producto <= '1';
+                    contador_producto <= (others => '0');
+                else
+                    tiempo_terminado_producto <= '0';
+                    contador_producto <= contador_producto + 1;
+                end if;
+                
+            elsif current_state = error then
+                if contador_error = duracion_led_error - 1 then
+                -- Ha finalizado la cuenta
+                    tiempo_terminado_error <= '1';
+                    contador_error <= (others => '0');
+                else
+                    tiempo_terminado_error <= '0';
+                    contador_error <= contador_error + 1;
+                end if;
+            
+            end if;
+        
+        end if;
+    
     end process;
     
     -- Actualizar el estado  
