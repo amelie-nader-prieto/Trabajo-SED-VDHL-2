@@ -30,6 +30,9 @@ architecture Behavioral of FSM is
     signal next_state : states := current_state;
     
     signal i_importe : integer := 0;
+    
+    -- Duración del periodo del reloj (100MHz)
+    constant T_clk : time := 10ns;
 
 begin
     -- Actualizar el estado
