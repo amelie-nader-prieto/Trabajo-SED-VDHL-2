@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity display is
   PORT(
-    cuenta : integer;
+    cuenta : IN integer;
     clk: IN std_logic;
     digsel : OUT std_logic_vector(7 DOWNTO 0);
     segmentos : OUT std_logic_vector(7 DOWNTO 0) --se tiene en cuenta el punto -> 1 bits mas
