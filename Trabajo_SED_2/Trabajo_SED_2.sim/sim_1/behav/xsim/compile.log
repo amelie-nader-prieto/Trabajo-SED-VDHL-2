@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/sim_1/new/display_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'display_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/irene/Desktop/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/sources_1/new/display.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'display'

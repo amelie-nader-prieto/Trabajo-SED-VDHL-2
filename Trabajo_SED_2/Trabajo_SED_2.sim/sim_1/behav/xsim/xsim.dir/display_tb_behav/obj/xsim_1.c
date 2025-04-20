@@ -54,15 +54,15 @@
 #endif
 typedef void (*funcp)(char *, char *);
 extern int main(int, char**);
-IKI_DLLESPEC extern void execute_14(char*, char *);
-IKI_DLLESPEC extern void execute_15(char*, char *);
-IKI_DLLESPEC extern void execute_10(char*, char *);
-IKI_DLLESPEC extern void execute_11(char*, char *);
-IKI_DLLESPEC extern void execute_12(char*, char *);
-IKI_DLLESPEC extern void execute_13(char*, char *);
+IKI_DLLESPEC extern void execute_26(char*, char *);
+IKI_DLLESPEC extern void execute_27(char*, char *);
+IKI_DLLESPEC extern void execute_22(char*, char *);
+IKI_DLLESPEC extern void execute_23(char*, char *);
+IKI_DLLESPEC extern void execute_24(char*, char *);
+IKI_DLLESPEC extern void execute_25(char*, char *);
 IKI_DLLESPEC extern void transaction_1(char*, char*, unsigned, unsigned, unsigned);
 IKI_DLLESPEC extern void vhdl_transfunc_eventcallback(char*, char*, unsigned, unsigned, unsigned, char *);
-funcp funcTab[8] = {(funcp)execute_14, (funcp)execute_15, (funcp)execute_10, (funcp)execute_11, (funcp)execute_12, (funcp)execute_13, (funcp)transaction_1, (funcp)vhdl_transfunc_eventcallback};
+funcp funcTab[8] = {(funcp)execute_26, (funcp)execute_27, (funcp)execute_22, (funcp)execute_23, (funcp)execute_24, (funcp)execute_25, (funcp)transaction_1, (funcp)vhdl_transfunc_eventcallback};
 const int NumRelocateId= 8;
 
 void relocate(char *dp)
