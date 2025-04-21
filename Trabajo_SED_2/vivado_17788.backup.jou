@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Apr 21 18:56:55 2025
-# Process ID: 16820
+# Start of session at: Mon Apr 21 18:27:13 2025
+# Process ID: 17788
 # Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16256 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4928 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
 # Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/vivado.log
 # Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2\vivado.jou
 # Running On        :AMELIE
@@ -19,15 +19,30 @@
 # Host memory       :8377 MB
 # Swap memory       :9663 MB
 # Total Virtual     :18040 MB
-# Available Virtual :8575 MB
+# Available Virtual :8756 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.xpr
 update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FSM_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
 launch_simulation
 open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg
 source FSM_tb.tcl
+save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg
+source FSM_tb.tcl
+create_wave_config
+save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg
+set_property xsim.view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg} [get_filesets sim_1]
 close_sim
 launch_simulation
 open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg

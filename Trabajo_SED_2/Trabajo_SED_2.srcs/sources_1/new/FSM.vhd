@@ -90,7 +90,7 @@ begin
     begin
         case current_state is
             when reposo =>
-                if monedas = ("1000" or "0100" or "0010" or "0001") then
+                if monedas = "1000" or monedas = "0100" or monedas = "0010" or monedas = "0001" then
                     next_state <= moneda_introducida;
                 else next_state <= current_state;
                 end if;
@@ -106,7 +106,7 @@ begin
                     end if;
                 elsif reset = '1' then
                     next_state <= error;
-                elsif monedas = ("1000" or "0100" or "0010" or "0001") then
+                elsif monedas = "1000" or monedas = "0100" or monedas = "0010" or monedas = "0001" then
                     next_state <= moneda_introducida;
                 else next_state <= current_state;
                 end if;
