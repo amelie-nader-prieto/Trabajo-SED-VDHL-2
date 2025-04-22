@@ -78,7 +78,40 @@ begin
     comprar_producto<='0';
     wait for 20 ns;
     
+    wait for 1000ns; -- debería volver al reposo
+    
     --wait for 2.5*100_000_000 ns; --debería volver al reposo
+    
+    -- importe = 0, reposo
+    -- probamos el estado de error
+    monedas <= "1000"; -- 100 cents
+    wait for 20ns;
+    monedas <= "1000"; -- 100 + 100 = 200 cents
+    wait for 20ns;
+    
+    comprar_producto <= '1'; -- importe > 100 -> error
+    wait for 20ns;
+    comprar_producto <= '0';
+    wait for 20ns;
+    
+    wait for 1000ns; -- debería volver al reposo
+    
+    -- importe = 0, reposo
+    -- probamos el reset
+    
+    -- reposo -> moneda introducida -> recibiendo monedas
+    monedas <= "0010"; 
+    wait for 20ns;
+    monedas <= "0000";
+    wait for 20ns;
+    
+    -- recibiendo monedas => error
+    reset <= '1';
+    wait for 20ns;
+    reset <= '0';
+    wait for 20ns;
+    
+    wait for 1000ns; -- debería volver al reposo
     
     stop_the_clock <= true;
     wait;

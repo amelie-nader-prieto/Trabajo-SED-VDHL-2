@@ -34,8 +34,14 @@ architecture Behavioral of FSM is
     -- Duración del periodo del reloj (100MHz)
     constant T_clk : time := 10ns;
     -- Número de ciclos que debe durar el LED encendido
-    constant duracion_led_producto : integer := 250_000_000;
-    constant duracion_led_error : integer := 250_000_000;
+    
+    -- Valores reales
+    --constant duracion_led_producto : integer := 250_000_000;
+    --constant duracion_led_error : integer := 250_000_000;
+    
+    -- Valores para simular
+    constant duracion_led_producto : integer := 25;
+    constant duracion_led_error : integer := 25;
     
     -- Señales para gestionar la temporización
     -- Se temporizan el led que indica la entrega del producto y el led que indica error
@@ -86,7 +92,7 @@ begin
     
     -- Decodificar el estado siguiente
     -- (depende del estado actual y de las entradas)
-    nextstate_decod : process(current_state, monedas, comprar_producto, reset)
+    nextstate_decod : process(current_state, monedas, comprar_producto, reset, tiempo_terminado_producto, tiempo_terminado_error, i_importe)
     begin
         case current_state is
             when reposo =>

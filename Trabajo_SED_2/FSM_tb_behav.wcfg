@@ -10,15 +10,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,683.128 ns"></ZoomEndTime>
-      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
+      <ZoomStartTime time="408.680 ns"></ZoomStartTime>
+      <ZoomEndTime time="429.731 ns"></ZoomEndTime>
+      <Cursor1Time time="413.880 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="117"></NameColumnWidth>
+      <NameColumnWidth column_width="105"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="11" />
    <wvobject fp_name="/FSM_tb/uut/monedas" type="array">
       <obj_property name="ElementShortName">monedas[3:0]</obj_property>
       <obj_property name="ObjectShortName">monedas[3:0]</obj_property>
@@ -46,5 +46,21 @@
    <wvobject fp_name="/FSM_tb/uut/i_importe" type="other">
       <obj_property name="ElementShortName">i_importe</obj_property>
       <obj_property name="ObjectShortName">i_importe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_tb/uut/contador_producto" type="array">
+      <obj_property name="ElementShortName">contador_producto[27:0]</obj_property>
+      <obj_property name="ObjectShortName">contador_producto[27:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_tb/uut/tiempo_terminado_producto" type="logic">
+      <obj_property name="ElementShortName">tiempo_terminado_producto</obj_property>
+      <obj_property name="ObjectShortName">tiempo_terminado_producto</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_tb/uut/contador_error" type="array">
+      <obj_property name="ElementShortName">contador_error[27:0]</obj_property>
+      <obj_property name="ObjectShortName">contador_error[27:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FSM_tb/uut/tiempo_terminado_error" type="logic">
+      <obj_property name="ElementShortName">tiempo_terminado_error</obj_property>
+      <obj_property name="ObjectShortName">tiempo_terminado_error</obj_property>
    </wvobject>
 </wave_config>
