@@ -1,40 +1,15 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="200" HostCore="8" HostMemory="08376602624">
+    <Process Command="vivado.bat" Owner="LENOVO" Host="AMELIE" Pid="9784" HostCore="8" HostMemory="08377323520">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="3172" HostCore="8" HostMemory="08376602624">
+    <Process Command="vivado.bat" Owner="LENOVO" Host="AMELIE" Pid="20376" HostCore="8" HostMemory="08377323520">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="16500" HostCore="8" HostMemory="08376602624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="5480" HostCore="8" HostMemory="08376602624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="2684" HostCore="8" HostMemory="08376602624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="17836" HostCore="8" HostMemory="08376602624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="7904" HostCore="8" HostMemory="08376602624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="sergi" Host="DESKTOP-81MS265" Pid="18244" HostCore="8" HostMemory="08376602624">
+    <Process Command="vivado.bat" Owner="LENOVO" Host="AMELIE" Pid="7880" HostCore="8" HostMemory="08377323520">
     </Process>
 </ProcessHandle>

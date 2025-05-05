@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="7ee1d980c97a42458747ea62840f2b30"/>

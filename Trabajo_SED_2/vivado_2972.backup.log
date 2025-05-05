@@ -3,26 +3,26 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Apr 21 18:27:13 2025
-# Process ID: 17788
-# Current directory: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4928 C:\Users\LENOVO\Documents\GitHub\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
-# Log file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/vivado.log
-# Journal file: C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2\vivado.jou
-# Running On        :AMELIE
+# Start of session at: Tue Apr 29 12:40:35 2025
+# Process ID: 2972
+# Current directory: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6212 C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.xpr
+# Log file: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/vivado.log
+# Journal file: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2\vivado.jou
+# Running On        :DESKTOP-81MS265
 # Platform          :Windows Server 2016 or Windows 10
-# Operating System  :19045
-# Processor Detail  :Intel(R) Core(TM) i7-10510U CPU @ 1.80GHz
-# CPU Frequency     :2304 MHz
+# Operating System  :26100
+# Processor Detail  :Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz
+# CPU Frequency     :2112 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
-# Host memory       :8377 MB
-# Swap memory       :9663 MB
-# Total Virtual     :18040 MB
-# Available Virtual :8756 MB
+# Host memory       :8376 MB
+# Swap memory       :4563 MB
+# Total Virtual     :12940 MB
+# Available Virtual :7658 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.xpr
+open_project C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24c/1.0/board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k24i/1.0/board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
@@ -108,193 +108,88 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [Project 1-313] Project file moved from 'C:/Users/irene/Desktop/Trabajo-SED-VDHL-2/Trabajo_SED_2' since last save.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 1468.781 ; gain = 394.254
+open_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:22 . Memory (MB): peak = 1491.117 ; gain = 449.551
 update_compile_order -fileset sources_1
-set_property top FSM_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-update_compile_order -fileset sim_1
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'FSM_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj FSM_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/sources_1/new/FSM.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FSM'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/sim_1/new/FSM_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'FSM_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3813] value in initialization depends on signal 'current_state' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/sources_1/new/FSM.vhd:30]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.FSM [fsm_default]
-Compiling architecture bench of entity xil_defaultlib.fsm_tb
-Built simulation snapshot FSM_tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg
-WARNING: Simulation object /display_tb/cuenta was not found in the design.
-WARNING: Simulation object /display_tb/clk was not found in the design.
-WARNING: Simulation object /display_tb/digsel was not found in the design.
-WARNING: Simulation object /display_tb/segmentos was not found in the design.
-WARNING: Simulation object /display_tb/stop_the_clock was not found in the design.
-WARNING: Simulation object /display_tb/clock_period was not found in the design.
-WARNING: Simulation object /display_tb/uut/anodos was not found in the design.
-source FSM_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.125 ; gain = 26.273
-save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg}
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'FSM_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj FSM_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3813] value in initialization depends on signal 'current_state' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/sources_1/new/FSM.vhd:30]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg
-source FSM_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.125 ; gain = 0.000
-create_wave_config
-save_wave_config {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg
-set_property xsim.view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg} [get_filesets sim_1]
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'FSM_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'FSM_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj FSM_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3813] value in initialization depends on signal 'current_state' [C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/sources_1/new/FSM.vhd:30]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "FSM_tb_behav -key {Behavioral:sim_1:Functional:FSM_tb} -tclbatch {FSM_tb.tcl} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg} -view {C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/display_tb_behav.wcfg
-open_wave_config C:/Users/LENOVO/Documents/GitHub/Trabajo-SED-VDHL-2/Trabajo_SED_2/FSM_tb_behav.wcfg
-source FSM_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'FSM_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1551.238 ; gain = 0.926
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
+launch_runs impl_1 -jobs 4
+[Tue Apr 29 12:42:19 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/runme.log
+[Tue Apr 29 12:42:19 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\MONEDAS.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\MONEDAS.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\MONEDAS.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\boton_reset.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\boton_reset.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\boton_reset.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\top.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\display.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\sergi\Downloads\SED\Lab\Trabajo_micros\Trabajo-SED-VDHL-2\Trabajo_SED_2\Trabajo_SED_2.srcs\sources_1\new\display.vhd:]
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Tue Apr 29 12:52:07 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/runme.log
+[Tue Apr 29 12:52:07 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 29 12:54:48 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 29 12:55:58 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 29 12:56:34 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/top.dcp to C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 29 13:05:57 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/runme.log
+[Tue Apr 29 13:05:57 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 29 13:20:37 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/runme.log
+[Tue Apr 29 13:20:37 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 29 13:45:43 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/runme.log
+[Tue Apr 29 13:45:43 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc
+file delete -force C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/constrs_1/imports/Downloads/Nexys-4-DDR-Master.xdc
+add_files -fileset constrs_1 -norecurse C:/Users/sergi/Downloads/Nexys4DDR_Master.xdc
+import_files -fileset constrs_1 C:/Users/sergi/Downloads/Nexys4DDR_Master.xdc
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.srcs/utils_1/imports/synth_1/top.dcp with file C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/top.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Apr 29 14:17:40 2025] Launched synth_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/synth_1/runme.log
+[Tue Apr 29 14:17:40 2025] Launched impl_1...
+Run output will be captured here: C:/Users/sergi/Downloads/SED/Lab/Trabajo_micros/Trabajo-SED-VDHL-2/Trabajo_SED_2/Trabajo_SED_2.runs/impl_1/runme.log
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 21 18:33:46 2025...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 29 14:24:55 2025...

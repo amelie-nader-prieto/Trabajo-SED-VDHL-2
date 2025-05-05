@@ -14,14 +14,15 @@ end display;
 architecture Behavioral of display is
   signal anodos      : integer range 0 to 2 := 0;
   signal muetra      : integer range 0 to 18 := 0;
-  signal clk_counter : unsigned(7 downto 0) := (others => '0');  -- solo hasta 10
+  signal clk_counter : unsigned(19 downto 0) := (others => '0');  -- solo hasta 10
 begin
 
   -- Proceso de reloj: multiplexado de dígitos
   process(clk)
   begin
     if rising_edge(clk) then
-      if clk_counter = to_unsigned(10, 8) then  -- más rápido para simulación
+      if clk_counter = to_unsigned(100000, 20) then
+      --if clk_counter = to_unsigned(10, 8) then  -- más rápido para simulación
         clk_counter <= (others => '0');
         if anodos = 2 then
           anodos <= 0;
@@ -33,6 +34,7 @@ begin
       end if;
     end if;
   end process;
+
 
   -- Activación de dígitos (anodos)
   process(anodos, cuenta)
