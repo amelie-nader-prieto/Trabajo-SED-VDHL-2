@@ -13,7 +13,7 @@ end display;
 
 architecture Behavioral of display is
   signal anodos      : integer range 0 to 2 := 0;
-  signal muetra      : integer range 0 to 18 := 0;
+  signal muetra      : integer range 0 to 12 := 0;
   signal clk_counter : unsigned(19 downto 0) := (others => '0');  -- solo hasta 10
 begin
 
@@ -39,7 +39,7 @@ begin
   -- Activación de dígitos (anodos)
   process(anodos, cuenta)
   begin
-    if cuenta <= 100 then
+    if cuenta <= 150 then
       case anodos is
         when 0 => digsel <= "11111110"; -- unidades
         when 1 => digsel <= "11111101"; -- decenas
@@ -53,28 +53,27 @@ begin
 
   -- Decodificación de valor a mostrar
   process(anodos, cuenta)
+   variable cen : integer;
     variable dec : integer;
     variable uni : integer;
   begin
-    if cuenta <= 100 then
+    if cuenta <= 150 then
+     cen := (cuenta / 100) mod 10;
       dec := (cuenta / 10) mod 10;
       uni := cuenta mod 10;
 
       case anodos is
         when 0 => muetra <= uni;
         when 1 => muetra <= dec;
-        when 2 =>
-          if cuenta = 100 then
-            muetra <= 11; -- mostrar "1."
-          else
-            muetra <= 10; -- mostrar "0."
-          end if;
-        when others => muetra <= 12;
+       when 2 => muetra <= cen;
+          when others => muetra <= 12; -- apagado
       end case;
     else
-      muetra <= 12; -- fuera de rango
+      muetra <= 12; -- apagado si fuera de rango
     end if;
   end process;
+
+  
 
   -- Tabla de segmentos
   process(muetra)
