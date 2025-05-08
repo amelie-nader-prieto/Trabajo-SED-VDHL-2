@@ -13,16 +13,15 @@ end display;
 
 architecture Behavioral of display is
   signal anodos      : integer range 0 to 2 := 0;
-  signal muetra      : integer range 0 to 12 := 0;
-  signal clk_counter : unsigned(19 downto 0) := (others => '0');  -- solo hasta 10
+  signal muetra      : integer range 0 to 14 := 0;
+  signal clk_counter : unsigned(19 downto 0) := (others => '0');
 begin
 
   -- Proceso de reloj: multiplexado de dígitos
   process(clk)
   begin
     if rising_edge(clk) then
-      if clk_counter = to_unsigned(100000, 20) then
-      --if clk_counter = to_unsigned(10, 8) then  -- más rápido para simulación
+      if clk_counter = to_unsigned(200000, 20) then
         clk_counter <= (others => '0');
         if anodos = 2 then
           anodos <= 0;
@@ -35,47 +34,49 @@ begin
     end if;
   end process;
 
-
-  -- Activación de dígitos (anodos)
+  -- Activación de dígitos (ánodos)
   process(anodos, cuenta)
   begin
     if cuenta <= 150 then
       case anodos is
         when 0 => digsel <= "11111110"; -- unidades
         when 1 => digsel <= "11111101"; -- decenas
-        when 2 => digsel <= "11111011"; -- punto decimal o centenas
+        when 2 => digsel <= "11111011"; -- centenas (con punto)
         when others => digsel <= "11111111";
       end case;
     else
-      digsel <= "11111111"; -- apagado si cuenta > 100
+      digsel <= "11111111"; -- display apagado si fuera de rango
     end if;
   end process;
 
-  -- Decodificación de valor a mostrar
+  -- Decodificación de valor a mostrar (con punto en centena)
   process(anodos, cuenta)
-   variable cen : integer;
+    variable cen : integer;
     variable dec : integer;
     variable uni : integer;
   begin
     if cuenta <= 150 then
-     cen := (cuenta / 100) mod 10;
+      cen := (cuenta / 100) mod 10;
       dec := (cuenta / 10) mod 10;
       uni := cuenta mod 10;
 
       case anodos is
-        when 0 => muetra <= uni;
-        when 1 => muetra <= dec;
-       when 2 => muetra <= cen;
-          when others => muetra <= 12; -- apagado
+        when 0 => muetra <= uni;               -- sin punto
+        when 1 => muetra <= dec;               -- sin punto
+        when 2 =>                               -- centena con punto (solo para 0 o 1)
+          case cen is
+            when 0 => muetra <= 10;            -- 0 con punto
+            when 1 => muetra <= 11;            -- 1 con punto
+            when others => muetra <= 12;       -- apagado 
+          end case;
+        when others => muetra <= 12;           -- apagado
       end case;
     else
-      muetra <= 12; -- apagado si fuera de rango
+      muetra <= 12; -- fuera de rango
     end if;
   end process;
 
-  
-
-  -- Tabla de segmentos
+  -- Tabla de segmentos 
   process(muetra)
   begin
     case muetra is
@@ -96,5 +97,3 @@ begin
   end process;
 
 end Behavioral;
-
-
